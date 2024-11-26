@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/processar_curriculo" method="post" id="meuCurriculo">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> 
+    
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(__) ____-____">
+    
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco">
+        </fieldset>
+    
+        <fieldset>
+            <legend>Experiência Profissional</legend>
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo">
+    
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa">
+    
+            <label for="periodo">Período:</label>
+            <input type="text" id="periodo" name="periodo">
+    
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" rows="4"></textarea>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Formação Acadêmica</legend>
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso">
+    
+            <label for="instituicao">Instituição:</label>
+            <input type="text" id="instituicao" name="instituicao">
+    
+            <label for="conclusao">Ano de Conclusão:</label>
+            <input type="text" id="conclusao" name="conclusao">
+        </fieldset>
+    
+        <fieldset>
+            <legend>Habilidades</legend>
+            <label for="habilidades">Habilidades:</label>
+            <textarea id="habilidades" name="habilidades" rows="4"></textarea>
+        </fieldset>
+    
+        <input type="submit" value="Enviar">
+    </form>        
+</body>
+</html>
